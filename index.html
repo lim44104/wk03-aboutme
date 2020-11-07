@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+
+
+  }
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f2f2f2;
+}
+
+.containerr {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="about-section">
+  <h1>About Me</h1>
+  
+</div>
+
+<h2 style="text-align:center">My Photo</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://media-exp1.licdn.com/dms/image/C5603AQFWhYrMrViPsg/profile-displayphoto-shrink_400_400/0?e=1609977600&v=beta&t=aL8aXjamZK9vu92gEDi1k1CvtaB_3JKmUCS01KUd1Aw" alt="p1" style="width:100%">
+      <div class="container">
+        
+        <p>Photo 1</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://media-exp1.licdn.com/dms/image/C562DAQEH8364CYjvUw/profile-treasury-image-shrink_800_800/0?e=1604829600&v=beta&t=BTaJJoo0H3aXuO97I0NijsAKcWDFzIaT9jIsUFBH9c8" alt="p2" style="width:100%">
+      <div class="container">
+        
+        <p>Photo 2</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://media-exp1.licdn.com/dms/image/C562DAQFl3jKNHuOOvw/profile-treasury-image-shrink_8192_8192/0?e=1604829600&v=beta&t=63TVMsv21FkiE6unvS6m0EVhDNBl510Rjr4P5Clb6_E" alt="p3" style="width:100%">
+      <div class="container">
+        
+        <p>Photo 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <h3>Contact Me</h3>
+
+  <div class="containerr">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+  </body>
+</html>
